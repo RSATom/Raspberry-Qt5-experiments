@@ -3,6 +3,9 @@
 # Adventures with Qt5 and Raspbian Jessie.
 # Using libraries from twolife.be
 
+sudo apt-get update
+sudo apt-get -y --force-yes install apt-transport-https
+
 # Add the twolife.be repository.
 sudo bash -c 'cat << EOF > /etc/apt/sources.list.d/twolife.list
 # Raspbian Jessie (stable)
@@ -13,7 +16,6 @@ EOF'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2578B775
 
 sudo apt-get update
-sudo apt-get -y --force-yes install apt-transport-https
 
 sudo apt-get -y --force-yes install qt5-default
 
