@@ -15,6 +15,8 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2578B775
 sudo apt-get update
 sudo apt-get -y --force-yes install apt-transport-https
 
+sudo apt-get -y --force-yes install qt5-default
+
 # Install most of the needed Qt packages.
 sudo apt-get -y --force-yes install qml-module-qtquick2 qml qmlscene qml-module-qtquick-particles2
 
